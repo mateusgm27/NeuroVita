@@ -1,4 +1,4 @@
-# NeuroVita — Banco de Dados NoSQL
+# NeuroVita — Banco de Dados
 
 > **Projeto de Análise e Desenvolvimento de Sistemas (ADS)**  
 > **Disciplina:** Banco de Dados NoSQL  
@@ -8,14 +8,32 @@
 
 ## 📋 Sobre o Projeto
 
-O **NeuroVita** é um sistema de gerenciamento especializado para clínicas de psicologia voltadas ao acompanhamento do espectro autista. Este repositório centraliza a estrutura do banco de dados do sistema de agendamentos clínicos, desenvolvido utilizando **MongoDB (NoSQL)** para explorar a flexibilidade da modelagem orientada a documentos.
+Sistema de gerenciamento especializado para clínicas de psicologia voltadas ao espectro autista. Este repositório centraliza toda a inteligência do sistema, contendo a estrutura e o desenvolvimento da camada de dados do sistema de agendamentos clínicos, utilizando **MongoDB** para a persistência em banco de dados NoSQL.
 
 ---
 
 ## 📁 Estrutura do Repositório
 
-```text
-├── docs/       # Documentação técnica do banco de dados
-└── scripts/    # Scripts de inicialização e consultas NoSQL
+- **docs/** → Documentação completa do projeto
+- **scripts/** → Arquivos e scripts de banco de dados NoSQL
 
-🗄️ Scripts e ColeçõesArquivo / ColeçãoDescriçãoinit_collections.jsCriando e estruturando as coleções do sistemaqueries_exemplos.jsConsultas, filtros e manipulação de dados NoSQL.                         🛠️ Tecnologias UtilizadasMongoDB / MongoDB Atlas: Banco de dados NoSQL orientado a documentos.MongoDB Compass: Interface gráfica (GUI) para gerenciamento e exploração de dados.Node.js / Express: Integração da API de backend com o banco de dados.Git & GitHub: Versionamento de código e documentação.© 2026 NeuroVita — Projeto ADS
+---
+
+## 🗄️ Scripts e Consultas
+
+| Arquivo | Descrição |
+| :--- | :--- |
+| `create_collections.js` | Criação e estruturação de todas as coleções do sistema |
+| `consultas.js` | Principais consultas `find()` e agregações do sistema |
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **MongoDB:** SGBD NoSQL utilizado para a persistência e gerenciamento de dados orientados a documentos.
+- **MongoDB Compass:** Interface gráfica (GUI) para gerenciamento e navegação no banco de dados.
+- **Git & GitHub:** Versionamento de código e documentação.
+
+---
+
+© 2026 NeuroVita — Projeto ADS
