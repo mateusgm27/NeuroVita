@@ -1,4 +1,4 @@
-# NeuroVita — Banco de Dados
+# 🧠🏥💚🩺 NeuroVita — Banco de Dados
 
 > **Projeto de Análise e Desenvolvimento de Sistemas (ADS)**  
 > **Disciplina:** Banco de Dados NoSQL  
