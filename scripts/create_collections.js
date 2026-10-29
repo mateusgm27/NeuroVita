@@ -1417,10 +1417,648 @@ const disponibilidade = [
   }
 ];
 
+// ======================================================
+// 9. COLLECTION: CONSULTAS
+// ======================================================
+
+const consultas = [
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372bf"),
+    pacienteId: "6acb977e9b47f86c598630fa",
+    profissionalId: "6acb963a9b47f86c598630f1",
+    dataHora: ISODate("2026-06-01T09:00:00.000Z"),
+    tipoAtendimento: "Retorno de rotina médica",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-05-31T09:00:00.000Z"),
+    atualizadoEm: ISODate("2026-05-31T09:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372c0"),
+    pacienteId: "6acb977e9b47f86c598630fb",
+    profissionalId: "6acb963a9b47f86c598630ec",
+    dataHora: ISODate("2026-06-01T10:30:00.000Z"),
+    tipoAtendimento: "Avaliação Neuropsicopedagógica",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-05-31T10:00:00.000Z"),
+    atualizadoEm: ISODate("2026-05-31T10:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372c1"),
+    pacienteId: "6acb977e9b47f86c598630fc",
+    profissionalId: "6acb963a9b47f86c598630ea",
+    dataHora: ISODate("2026-06-02T14:00:00.000Z"),
+    tipoAtendimento: "Sessão psicopedagógica",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-01T08:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-01T08:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372c2"),
+    pacienteId: "6acb977e9b47f86c598630fd",
+    profissionalId: "6acb963a9b47f86c598630f0",
+    dataHora: ISODate("2026-06-02T14:30:00.000Z"),
+    tipoAtendimento: "Sessão com Psicólogo",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-01T09:15:00.000Z"),
+    atualizadoEm: ISODate("2026-06-01T09:15:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372c3"),
+    pacienteId: "6acb977e9b47f86c598630fe",
+    profissionalId: "6acb963a9b47f86c598630eb",
+    dataHora: ISODate("2026-06-03T09:30:00.000Z"),
+    tipoAtendimento: "Acompanhamento Terapêutico",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-02T08:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-02T08:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372c4"),
+    pacienteId: "6acb977e9b47f86c598630ff",
+    profissionalId: "6acb963a9b47f86c598630ed",
+    dataHora: ISODate("2026-06-03T10:30:00.000Z"),
+    tipoAtendimento: "Avaliação Neurocognitiva",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-02T09:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-02T09:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372c5"),
+    pacienteId: "6acb977e9b47f86c59863100",
+    profissionalId: "6acb963a9b47f86c598630f3",
+    dataHora: ISODate("2026-06-04T11:00:00.000Z"),
+    tipoAtendimento: "Consulta Psiquiátrica",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-03T11:15:00.000Z"),
+    atualizadoEm: ISODate("2026-06-03T11:15:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372c6"),
+    pacienteId: "6acb977e9b47f86c59863101",
+    profissionalId: "6acb963a9b47f86c598630ee",
+    dataHora: ISODate("2026-06-04T16:00:00.000Z"),
+    tipoAtendimento: "Intervenção TEA",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-03T14:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-03T14:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372c7"),
+    pacienteId: "6acb977e9b47f86c59863102",
+    profissionalId: "6acb963a9b47f86c598630ef",
+    dataHora: ISODate("2026-06-05T09:30:00.000Z"),
+    tipoAtendimento: "Manejo Comportamental ABA",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-04T09:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-04T09:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372c8"),
+    pacienteId: "6acb977e9b47f86c59863103",
+    profissionalId: "6acb963a9b47f86c598630f2",
+    dataHora: ISODate("2026-06-05T14:30:00.000Z"),
+    tipoAtendimento: "Consulta Médica Infantil",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-04T10:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-04T10:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372c9"),
+    pacienteId: "6acb977e9b47f86c598630fa",
+    profissionalId: "6acb963a9b47f86c598630ea",
+    dataHora: ISODate("2026-06-08T08:30:00.000Z"),
+    tipoAtendimento: "Acompanhamento Psicopedagógico",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-07T08:15:00.000Z"),
+    atualizadoEm: ISODate("2026-06-07T08:15:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372ca"),
+    pacienteId: "6acb977e9b47f86c598630fb",
+    profissionalId: "6acb963a9b47f86c598630eb",
+    dataHora: ISODate("2026-06-08T09:00:00.000Z"),
+    tipoAtendimento: "Intervenção Cognitiva",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-07T09:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-07T09:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372cb"),
+    pacienteId: "6acb977e9b47f86c598630fc",
+    profissionalId: "6acb963a9b47f86c598630ec",
+    dataHora: ISODate("2026-06-08T14:00:00.000Z"),
+    tipoAtendimento: "Transtornos de Leitura",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-07T09:15:00.000Z"),
+    atualizadoEm: ISODate("2026-06-07T09:15:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372cc"),
+    pacienteId: "6acb977e9b47f86c598630fd",
+    profissionalId: "6acb963a9b47f86c598630ed",
+    dataHora: ISODate("2026-06-09T09:00:00.000Z"),
+    tipoAtendimento: "Aplicadora ABA",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-08T14:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-08T14:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372cd"),
+    pacienteId: "6acb977e9b47f86c598630fe",
+    profissionalId: "6acb963a9b47f86c598630ee",
+    dataHora: ISODate("2026-06-09T13:30:00.000Z"),
+    tipoAtendimento: "Sessão de Aprendizagem",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-08T15:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-08T15:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372ce"),
+    pacienteId: "6acb977e9b47f86c598630ff",
+    profissionalId: "6acb963a9b47f86c598630ef",
+    dataHora: ISODate("2026-06-10T08:00:00.000Z"),
+    tipoAtendimento: "Sessão semanal de ludoterapia",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-09T09:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-09T09:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372cf"),
+    pacienteId: "6acb977e9b47f86c59863100",
+    profissionalId: "6acb963a9b47f86c598630f0",
+    dataHora: ISODate("2026-06-10T09:30:00.000Z"),
+    tipoAtendimento: "Treino fonológico focado em fala",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-09T10:15:00.000Z"),
+    atualizadoEm: ISODate("2026-06-09T10:15:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372d0"),
+    pacienteId: "6acb977e9b47f86c59863101",
+    profissionalId: "6acb963a9b47f86c598630f1",
+    dataHora: ISODate("2026-06-10T14:00:00.000Z"),
+    tipoAtendimento: "Acompanhamento de manejo medicamentoso",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-09T11:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-09T11:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372d1"),
+    pacienteId: "6acb977e9b47f86c59863102",
+    profissionalId: "6acb963a9b47f86c598630f2",
+    dataHora: ISODate("2026-06-11T09:30:00.000Z"),
+    tipoAtendimento: "Terapia ABA individualizada",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-10T09:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-10T09:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372d2"),
+    pacienteId: "6acb977e9b47f86c59863103",
+    profissionalId: "6acb963a9b47f86c598630f3",
+    dataHora: ISODate("2026-06-11T13:00:00.000Z"),
+    tipoAtendimento: "Intervenção para seletividade alimentar",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-10T10:15:00.000Z"),
+    atualizadoEm: ISODate("2026-06-10T10:15:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372d3"),
+    pacienteId: "6acb977e9b47f86c598630fa",
+    profissionalId: "6acb963a9b47f86c598630ea",
+    dataHora: ISODate("2026-06-11T14:30:00.000Z"),
+    tipoAtendimento: "Apoio psicopedagógico em leitura",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-10T11:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-10T11:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372d4"),
+    pacienteId: "6acb977e9b47f86c598630fb",
+    profissionalId: "6acb963a9b47f86c598630eb",
+    dataHora: ISODate("2026-06-12T08:00:00.000Z"),
+    tipoAtendimento: "Sessão regular de psicomotricidade",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-11T09:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-11T09:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372d5"),
+    pacienteId: "6acb977e9b47f86c598630fc",
+    profissionalId: "6acb963a9b47f86c598630ec",
+    dataHora: ISODate("2026-06-12T09:30:00.000Z"),
+    tipoAtendimento: "Avaliação de marcos do neurodesenvolvimento",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-11T10:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-11T10:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372d6"),
+    pacienteId: "6acb977e9b47f86c598630fd",
+    profissionalId: "6acb963a9b47f86c598630ed",
+    dataHora: ISODate("2026-06-13T08:00:00.000Z"),
+    tipoAtendimento: "Treino de habilidades sociais lúdicas",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-12T10:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-12T10:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372d7"),
+    pacienteId: "6acb977e9b47f86c598630fe",
+    profissionalId: "6acb963a9b47f86c598630ee",
+    dataHora: ISODate("2026-06-13T09:30:00.000Z"),
+    tipoAtendimento: "Manejo comportamental para TOD",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-12T10:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-12T10:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372d8"),
+    pacienteId: "6acb977e9b47f86c598630ff",
+    profissionalId: "6acb963a9b47f86c598630ef",
+    dataHora: ISODate("2026-06-15T08:00:00.000Z"),
+    tipoAtendimento: "TCC focada em ansiedade escolar",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-13T10:15:00.000Z"),
+    atualizadoEm: ISODate("2026-06-13T10:15:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372d9"),
+    pacienteId: "6acb977e9b47f86c59863100",
+    profissionalId: "6acb963a9b47f86c598630f0",
+    dataHora: ISODate("2026-06-15T09:30:00.000Z"),
+    tipoAtendimento: "Exercícios de comunicação alternativa",
+    local: "Consultório 3",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-13T10:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-13T10:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372da"),
+    pacienteId: "6acb977e9b47f86c59863101",
+    profissionalId: "6acb963a9b47f86c598630f1",
+    dataHora: ISODate("2026-06-15T14:30:00.000Z"),
+    tipoAtendimento: "Análise de resposta sensorial tátil",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-13T11:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-13T11:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372db"),
+    pacienteId: "6acb977e9b47f86c59863102",
+    profissionalId: "6acb963a9b47f86c598630f2",
+    dataHora: ISODate("2026-06-17T08:30:00.000Z"),
+    tipoAtendimento: "Sessão de estimulação cognitiva precoce",
+    local: "Consultório 1",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-15T08:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-15T08:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad76c1a9d17b0cfc70372dc"),
+    pacienteId: "6acb977e9b47f86c59863103",
+    profissionalId: "6acb963a9b47f86c598630f3",
+    dataHora: ISODate("2026-06-17T09:00:00.000Z"),
+    tipoAtendimento: "Orientação parental e entrega de relatório",
+    local: "Consultório 2",
+    modalidade: "PRESENCIAL",
+    duracao: NumberInt("50"),
+    status: "CONFIRMADA",
+    criadoEm: ISODate("2026-06-15T08:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-15T08:30:00.000Z")
+  },
+  ];
+
+  // ======================================================
+  // 10. Collection: PRONTUARIOS
+   // ======================================================
+
+const prontuarios = [
+  {
+    _id: ObjectId("6ad778e29d17b0cfc70372e6"),
+    pacienteId: "6acb977e9b47f86c598630fa",
+    profissionalId: "6acb963a9b47f86c598630f1",
+    consultaId: null,
+    queixaPrincipal: "Dificuldade de concentração na escola e agitação nas tarefas.",
+    avaliacao: "Apresenta sinais compatíveis com TDAH, hiperatividade leve.",
+    planoTratamento: "Sessões semanais de psicopedagogia e treino de foco.",
+    prescricao: "Sem medicação indicada nesta fase inicial.",
+    criadoEm: ISODate("2026-06-01T09:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-01T09:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad778e29d17b0cfc70372e7"),
+    pacienteId: "6acb977e9b47f86c598630fb",
+    profissionalId: "6acb963a9b47f86c598630ec",
+    consultaId: null,
+    queixaPrincipal: "Atraso no desenvolvimento da leitura e escrita.",
+    avaliacao: "Indicativos de dislexia e dificuldade na identificação fonêmica.",
+    planoTratamento: "Estimulação fonológica e apoio escolar individualizado.",
+    prescricao: "Exercícios práticos de alfabetização lúdica.",
+    criadoEm: ISODate("2026-06-01T10:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-01T10:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad778e29d17b0cfc70372e8"),
+    pacienteId: "6acb977e9b47f86c598630fc",
+    profissionalId: "6acb963a9b47f86c598630ea",
+    consultaId: null,
+    queixaPrincipal: "Resistência para realizar atividades em grupo.",
+    avaliacao: "Dificuldade de interação social e regulação emocional.",
+    planoTratamento: "Terapia comportamental e treino de habilidades sociais.",
+    prescricao: "Orientação para ambiente familiar e rotina estruturada.",
+    criadoEm: ISODate("2026-06-02T14:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-02T14:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad778e29d17b0cfc70372e9"),
+    pacienteId: "6acb977e9b47f86c598630fd",
+    profissionalId: "6acb963a9b47f86c598630f0",
+    consultaId: null,
+    queixaPrincipal: "Choro frequente e medo excessivo de separação dos pais.",
+    avaliacao: "Ansiedade infantil de separação em grau moderado.",
+    planoTratamento: "Ludoterapia semanal e acolhimento familiar.",
+    prescricao: "Estratégias lúdicas de segurança emocional.",
+    criadoEm: ISODate("2026-06-02T15:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-02T15:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad778e29d17b0cfc70372ea"),
+    pacienteId: "6acb977e9b47f86c598630fe",
+    profissionalId: "6acb963a9b47f86c598630eb",
+    consultaId: null,
+    queixaPrincipal: "Inflexibilidade cognitiva e seletividade alimentar.",
+    avaliacao: "Características do espectro autista (TEA Nível 1 de suporte).",
+    planoTratamento: "Intervenção precoce com método ABA e integração sensorial.",
+    prescricao: "Encaminhamento para terapia ocupacional complementar.",
+    criadoEm: ISODate("2026-06-03T08:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-03T08:30:00.000Z")
+  }
+];
+
+// ======================================================
+// 11. COLLECTION: DIAGNOSTICOS
+// ======================================================
+const diagnosticos = [
+  {
+    _id: ObjectId("6ad779f79d17b0cfc70372ed"),
+    pacienteId: "6acb977e9b47f86c598630fa",
+    profissionalId: "6acb963a9b47f86c598630f1",
+    descricao: "Transtorno do Deficit de Atencao e Hiperatividade (TDAH - CID-11: 6A05)",
+    criadoEm: ISODate("2026-06-01T09:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-01T09:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad779f79d17b0cfc70372ee"),
+    pacienteId: "6acb977e9b47f86c598630fb",
+    profissionalId: "6acb963a9b47f86c598630ec",
+    descricao: "Transtorno Especifico da Aprendizagem com Prejuizo na Leitura (Dislexia - CID-11: 6A03.0)",
+    criadoEm: ISODate("2026-06-01T10:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-01T10:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad779f79d17b0cfc70372ef"),
+    pacienteId: "6acb977e9b47f86c598630fc",
+    profissionalId: "6acb963a9b47f86c598630ea",
+    descricao: "Transtorno de Ansiedade Social na Infancia (CID-11: 6B00)",
+    criadoEm: ISODate("2026-06-02T14:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-02T14:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad779f79d17b0cfc70372f0"),
+    pacienteId: "6acb977e9b47f86c598630fd",
+    profissionalId: "6acb963a9b47f86c598630f0",
+    descricao: "Transtorno de Ansiedade de Separacao (CID-11: 6B05)",
+    criadoEm: ISODate("2026-06-02T15:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-02T15:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad779f79d17b0cfc70372f1"),
+    pacienteId: "6acb977e9b47f86c598630fe",
+    profissionalId: "6acb963a9b47f86c598630eb",
+    descricao: "Transtorno do Espectro do Autismo - Nivel 1 de Suporte (TEA - CID-11: 6A02.0)",
+    criadoEm: ISODate("2026-06-03T08:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-03T08:30:00.000Z")
+  }
+];
 
 
+// ======================================================
+// 12. COLLECTION: TRATAMENTO
+// ======================================================
+const tratamentos = [
+  {
+    _id: ObjectId("6ad77dd29d17b0cfc70372f5"),
+    pacienteId: "6acb977e9b47f86c598630fa",
+    profissionalId: "6acb963a9b47f86c598630f1",
+    descricao: "Treino de Foco e Organização Cognitiva",
+    objetivo: "Melhorar a atenção sustentada em atividades escolares",
+    frequencia: "2x por semana",
+    duracao: "6 meses",
+    observacoes: "Acompanhamento conjunto com a equipe pedagógica da escola",
+    criadoEm: ISODate("2026-06-01T09:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-01T09:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad77dd29d17b0cfc70372f6"),
+    pacienteId: "6acb977e9b47f86c598630fb",
+    profissionalId: "6acb963a9b47f86c598630ec",
+    descricao: "Intervenção em Consciência Fonológica",
+    objetivo: "Superar barreiras de decodificação de leitura e escrita",
+    frequencia: "1x por semana",
+    duracao: "4 meses",
+    observacoes: "Uso de jogos lúdicos e materiais visuais estruturados",
+    criadoEm: ISODate("2026-06-01T10:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-01T10:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad77dd29d17b0cfc70372f7"),
+    pacienteId: "6acb977e9b47f86c598630fc",
+    profissionalId: "6acb963a9b47f86c598630ea",
+    descricao: "Treino de Habilidades Sociais (THS)",
+    objetivo: "Desenvolver autonomia na interação e cooperação com pares",
+    frequencia: "1x por semana",
+    duracao: "6 meses",
+    observacoes: "Atividades em pequenos grupos para simulação de cenários reais",
+    criadoEm: ISODate("2026-06-02T14:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-02T14:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad77dd29d17b0cfc70372f8"),
+    pacienteId: "6acb977e9b47f86c598630fd",
+    profissionalId: "6acb963a9b47f86c598630f0",
+    descricao: "Ludoterapia e Regulação Emocional",
+    objetivo: "Reduzir picos de ansiedade no ambiente escolar e familiar",
+    frequencia: "2x por semana",
+    duracao: "3 meses",
+    observacoes: "Orientação quinzenal com os pais incluída no plano",
+    criadoEm: ISODate("2026-06-02T15:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-02T15:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad77dd29d17b0cfc70372f9"),
+    pacienteId: "6acb977e9b47f86c598630fe",
+    profissionalId: "6acb963a9b47f86c598630eb",
+    descricao: "Intervenção Precoce baseada em ABA",
+    objetivo: "Ampliar repertório comunicativo e diminuir comportamentos de esquiva",
+    frequencia: "3x por semana",
+    duracao: "12 meses",
+    observacoes: "Avaliação contínua a cada 30 dias de aplicação",
+    criadoEm: ISODate("2026-06-03T08:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-03T08:30:00.000Z")
+  }
+];
 
-
+// =======================================
+// 14. COLLECTION: EXAMES
+// ======================================
+const exames = [
+  {
+    _id: ObjectId("6ad77e359d17b0cfc70372fd"),
+    pacienteId: "6acb977e9b47f86c598630fa",
+    profissionalId: "6acb963a9b47f86c598630f1",
+    nome: "Avaliação Neuropsicológica Completa",
+    tipo: "Neuropsicológico",
+    dataRealizacao: ISODate("2026-05-20T10:00:00.000Z"),
+    resultado: "Indicativos de TDAH com oscilação na atenção sustentada.",
+    observacoes: "Recomendada intervenção psicopedagógica semanal.",
+    criadoEm: ISODate("2026-06-01T09:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-01T09:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad77e359d17b0cfc70372fe"),
+    pacienteId: "6acb977e9b47f86c598630fb",
+    profissionalId: "6acb963a9b47f86c598630ec",
+    nome: "Processamento Auditivo Central (PAC)",
+    tipo: "Audiológico",
+    dataRealizacao: ISODate("2026-05-22T14:30:00.000Z"),
+    resultado: "Alteração na ordenação temporal e figura-fundo.",
+    observacoes: "Acompanhamento fonoaudiológico sugerido.",
+    criadoEm: ISODate("2026-06-01T10:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-01T10:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad77e359d17b0cfc70372ff"),
+    pacienteId: "6acb977e9b47f86c598630fc",
+    profissionalId: "6acb963a9b47f86c598630ea",
+    nome: "Eletroencefalograma (EEG) em Sono e Vigília",
+    tipo: "Neurológico",
+    dataRealizacao: ISODate("2026-05-25T08:00:00.000Z"),
+    resultado: "Atividade elétrica cerebral dentro dos padrões da normalidade.",
+    observacoes: "Sem paroxismos epileptiformes detectados.",
+    criadoEm: ISODate("2026-06-02T14:00:00.000Z"),
+    atualizadoEm: ISODate("2026-06-02T14:00:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad77e359d17b0cfc7037300"),
+    pacienteId: "6acb977e9b47f86c598630fd",
+    profissionalId: "6acb963a9b47f86c598630f0",
+    nome: "Avaliação de Linguagem e Fala",
+    tipo: "Fonoaudiológico",
+    dataRealizacao: ISODate("2026-05-28T11:00:00.000Z"),
+    resultado: "Ligeiro atraso na estruturação sintática.",
+    observacoes: "Estimulação contínua com suporte familiar.",
+    criadoEm: ISODate("2026-06-02T15:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-02T15:30:00.000Z")
+  },
+  {
+    _id: ObjectId("6ad77e359d17b0cfc7037301"),
+    pacienteId: "6acb977e9b47f86c598630fe",
+    profissionalId: "6acb963a9b47f86c598630eb",
+    nome: "Triagem do Desenvolvimento Infantil (DENVER II)",
+    tipo: "Observacional / Comportamental",
+    dataRealizacao: ISODate("2026-05-29T09:30:00.000Z"),
+    resultado: "Atrasos em domínio pessoal-social e linguagem.",
+    observacoes: "Encaminhado para plano de intervenção precoce.",
+    criadoEm: ISODate("2026-06-03T08:30:00.000Z"),
+    atualizadoEm: ISODate("2026-06-03T08:30:00.000Z")
+  }
+];
 
 
 
