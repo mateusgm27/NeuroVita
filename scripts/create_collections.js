@@ -25,7 +25,7 @@ const administradores = [
   {
     _id: ObjectId("6acb95c69b47f86c598630e4"),
     nome: "Ana Oliveira",
-    email: "anaadmin@gmail.com",
+    email: "administrador@gmail.com",
     senha: "$2a$10$3p/7QhK8d8W/kE3kY4Z7.u6N/J0nF5v/g6H7i8J9k0L1m2N3o4P5Q",
     perfil: "ADMINISTRADOR"
   },
@@ -72,8 +72,8 @@ const administradores = [
   },
   {
     _id: ObjectId("670da2000000000000000020"),
-    nome: "Adriana Alves",
-    email: "AdrianaSecre@gmail.com",
+    nome: "Fernanda Lima",
+    email: "administrador@gmail.com",
     senha: "$2b$12$Jp7eFknakf1OWXnFUaaVIeqrbPcGDMdFcdfUJk5RFUmq4gCyAfdFi",
     perfil: "SECRETARIA",
     senhaProvisoria: false,
@@ -83,7 +83,7 @@ const administradores = [
   {
     _id: ObjectId("670da2000000000000000030"),
     nome: "Dr. Carlos Eduardo",
-    email: "carlos.edu@gmail.com",
+    email: "profissional@gmail.com",
     senha: "$2b$12$j0CcFL2Vf.9t2VFNocVFQuFJYERUgFZgKmZtM4OzLMrwBHUnr5b1a",
     perfil: "PROFISSIONAL",
     senhaProvisoria: false,
@@ -94,7 +94,7 @@ const administradores = [
       {
     _id: ObjectId("670da2000000000000000040"),
     nome: "Enzo Gabriel",
-    email: "enzo@gmail.com",
+    email: "paciente@gmail.com",
     senha: "$2a$10$w8T9O9Q7j7oE4PZ4oO3mleQ7V6wF9mR3yI8mZ8N1p4Q7r2S3t4U5V",
     perfil: "PACIENTE",
     senhaProvisoria: false,
@@ -141,8 +141,8 @@ const secretarias = [
   },
   {
     _id: ObjectId("6acb95c69b47f86c598630ea"),
-    nome: "Adriana Alves",
-    email: "AdrianaSecre@gmail.com",
+    nome: "Alessandra Alves",
+    email: "AlessandraSecre@gmail.com",
     telefone: "(61) 98888-0000"
   }
 ];
