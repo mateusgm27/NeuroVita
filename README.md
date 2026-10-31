@@ -24,7 +24,7 @@ Sistema de gerenciamento especializado para clínicas de psicologia voltadas ao 
 | Arquivo | Descrição |
 | :--- | :--- |
 | `create_collections.js` | Criação e estruturação de todas as coleções do sistema |
-| `consultas.js` | Principais consultas `find()` e agregações do sistema |
+| scripts/scripts/consultas.js | Principais consultas `find()` e agregações do sistema |
 
 ---
 
