@@ -1995,7 +1995,7 @@ const tratamentos = [
 ];
 
 // =======================================
-// 14. COLLECTION: EXAMES
+// 13. COLLECTION: EXAMES
 // ======================================
 const exames = [
   {
