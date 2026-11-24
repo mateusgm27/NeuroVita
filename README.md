@@ -32,6 +32,8 @@ Sistema de gerenciamento especializado para clínicas de psicologia voltadas ao 
 - **MongoDB:** SGBD NoSQL utilizado para a persistência e gerenciamento de dados orientados a documentos.
 - **MongoDB Compass:** Interface gráfica (GUI) para gerenciamento e navegação no banco de dados.
 - **Git & GitHub:** Versionamento de código e documentação.
+- Draw.io: Ferramenta gráfica para desenvolvimento de diagramas.
+- UML (Unified Modeling Language): Notação utilizada para modelagem do sistema.
 
 ---
 
